@@ -15,6 +15,14 @@ with motif accessibility in a cell-type-specific manner, revealing potential reg
 This study provides a resource-efficient, open-source framework for investigating TF-chromatin interactions 
 in complex brain disorders and identifies candidate TFs for therapeutic targeting in Alzheimer's disease.
 
+We aim to provide a method for "Cell-Type-Specific Multiomic Inference of Transcription Factor Activity 
+and Chromatin Accessibility in AD"
+
+With this repository, we have a complete, executable workflow for identifying transcription factors (TFs) 
+that drive chromatin accessibility changes in Alzheimer’s disease (AD). 
+The pipeline integrates single-nucleus RNA-seq (snRNA-seq), ATAC-seq, and motif analysis to map TF activity
+and binding preferences at cell-type resolution.
+
 
 *Key Features*
 - snRNA-seq + ATAC-seq integration: We combine SEA-AD and PsychENCODE datasets for robust cell-type-specific analysis.
