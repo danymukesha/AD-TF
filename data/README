@@ -1,5 +1,5 @@
 #here is the how the snRNA-seq (SEA-AD) + ATAC-seq (PsychENCODE) were downloaded
-#it is require to do (free) Synapse registration (no approval delays).
+#it is required to do (free) Synapse registration (no approval delays).
 
 import synapseclient
 syn = synapseclient.Synapse()
