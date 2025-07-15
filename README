@@ -1,1 +1,23 @@
-Neuronal and glial transcriptional regulators modulate disease-associated chromatin accessibility in Alzheimer’s brains
+~Neuronal and glial transcriptional regulators modulate disease-associated chromatin accessibility in Alzheimer’s brains~
+
+Abstract:
+Transcription factors (TFs) orchestrate cell-specific gene expression programs, yet their role 
+in shaping chromatin accessibility during Alzheimer’s disease (AD) progression remains poorly defined. 
+Here, we present an integrative, reproducible pipeline that identifies TFs driving chromatin remodeling 
+in AD using publicly available single-nucleus RNA-seq (snRNA-seq), ATAC-seq, and TF motif datasets. 
+
+By analyzing data from over 80 postmortem human prefrontal cortex samples, we resolve cell-type-specific 
+transcriptional regulators and their corresponding motif accessibility patterns. 
+Neuronal chromatin regions in AD brains exhibit selective enrichment of CLEAR motifs targeted by TFEB, 
+a master regulator of autophagy, while microglial peaks show increased accessibility for PU.1 and STAT3, 
+implicating neuroimmune activation. We further demonstrate that TF expression levels correlate 
+with motif accessibility in a cell-type-specific manner, revealing potential regulatory circuits disrupted in AD. 
+This study provides a resource-efficient, open-source framework for investigating TF-chromatin interactions 
+in complex brain disorders and identifies candidate TFs for therapeutic targeting in Alzheimer's disease.
+
+
+*Key Features*
+- snRNA-seq + ATAC-seq integration: We combine SEA-AD and PsychENCODE datasets for robust cell-type-specific analysis.
+- TF motif enrichment: We identify enriched TF binding motifs in AD-specific accessible regions.
+- TF activity inference: We use SCENIC and DoRothEA to infer TF regulatory activity from expression data.
+- Reproducible workflow: We provide a tiny Snakemake pipeline designed for <8GB RAM machines (e.g., AWS t3.large).
