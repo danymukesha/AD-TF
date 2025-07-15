@@ -1,7 +1,7 @@
 import requests
 import os
 
-# Synapse ID syn26529181
+# Synapse ID syn26529181 (old/not working), this is the new one (syn26223298)
 url = "https://github.com/SEA-AD/seaad-data-releases/raw/main/metadata.csv"
 os.makedirs("data/seaad", exist_ok=True)
 r = requests.get(url, allow_redirects=True)

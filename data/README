@@ -1,0 +1,11 @@
+#here is the how the snRNA-seq (SEA-AD) + ATAC-seq (PsychENCODE) were downloaded
+#it is require to do (free) Synapse registration (no approval delays).
+
+import synapseclient
+syn = synapseclient.Synapse()
+syn.login(authToken="YOUR_TOKEN_HERE")
+
+query = syn.tableQuery("SELECT * FROM syn11346063.72 WHERE ( ( \"study\" HAS ( 'SEA-AD' ) ) ) AND ( `resourceType` = 'metadata' )")
+query.asDataFrame()
+
+
